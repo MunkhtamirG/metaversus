@@ -1,7 +1,8 @@
 import Head from "next/head";
+
 import "../styles/globals.css";
 
-const MyApp = ({ Components, pageProps }) => (
+const MyApp = ({ Component, pageProps }) => (
   <>
     <Head>
       <title>Metaversus</title>
@@ -13,7 +14,7 @@ const MyApp = ({ Components, pageProps }) => (
         href="https://stijndv.com/fonts/Eudoxus-Sans.css"
       />
     </Head>
-    <Components {...pageProps} />
+    <Component {...pageProps} />
   </>
 );
 
